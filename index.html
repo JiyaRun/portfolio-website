@@ -1,303 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JiyaPortfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
-    <!-- <script src="js/script.js"></script> -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- header design -->
-    <header class="header">
-        <a href="#" class="logo">Jiya<span class="animate" style="--i:1;"></span></a>
+        <link rel="stylesheet" href="styles.css">
 
-        <!-- <i class="fa-solid fa-bars"></i> -->
-        <div class="fa-solid fa-bars" id="menu-icon"> <span class="animate" style="--i:2;"></span></div>
-        
-        <nav class="navbar">
-            <a href ="#home" class="active">Home</a>
-            <a href ="#projects">Projects</a>
-            <a href ="#education">Education</a>
-            <a href ="#skills">Skills</a>
-            <a href ="#contact">Contact</a>
-            <span class="active-nav"></span>
-            <span class="animate" style="--i:2;"></span>
-        </nav>
-    </header>
-
-    <!-- home section design  -->
-    <section class="home show-animate" id="home">
-        <div class="home-content">
-            <h1>
-                Hi, I'm <span>Jiya Kakani</span><span class="animate" style="--i:2;"></span></h1>
-                <div class="text-animate">
-                    <h3>
-                        Frontended Developer
-                    </h3>
-                    <span class="animate" style="--i:3;"></span>
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+        <title>Portfolio website</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Jiya Kakani</a>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    <span class="animate" style="--i:4;"></span>
-                </p>
-                <div class="btn-box">
-                    <a href="https://drive.google.com/drive/folders/1GUqLVEgfKE0rqlV3WSwg1OlVNIQM5CCy?usp=drive_link" class="btn">CV</a>
-                    <span class="animate" style="--i:5;"></span>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+                        <li class="nav__item"><a href="#project" class="nav__link">Project</a></li>
+                       
+                    </ul>
                 </div>
-        </div>
-        <div class="home-sci">
-            <a href="kakanijiya@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-            <a href="linkedin.com/in/jiya-kakani-bab172204"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="github.com/JiyaRun"><i class="fa-brands fa-github"></i></a>
-            <span class="animate" style="--i:6;"></span>
-        </div>
 
-        <div class="home-imgHover"></div>
-        <span class="animate home-img" style="--i:7;"></span>
-    </section>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
 
-     <!-- project section design -->
-     <section class="project" id="project">
-        <h2 class="heading">Projects<span>ABC</span><span class="animate scroll" style="--i:1;"></span></h2>
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Jiya Kakani</span><br>a Front-End <br>Web Developer</h1>
 
-        <div class="project-img">
-            <img src="ales-nesetril-Im7lZjxeLhg-unsplash.jpg" alt="">
-            <span class="circle-spin"></span>
-            <span class="animate scroll" style="--i:2;"></span>
-        </div>
+                    <a href="https://drive.google.com/drive/folders/1GUqLVEgfKE0rqlV3WSwg1OlVNIQM5CCy?usp=drive_link" class="button " target="_blank">Resume</a>
+                </div>
 
-        <div class="project-content">
-            <h3>Personal Portfolio<span class="animate scroll" style="--i:3;"></span></h3>
-            <p>Portfolio is a personal project built whose frontend is coded in HTML, CSS, Bootstrap & the functions are implemented using Javascript.</p>
-            <span class="animate scroll" style="--i:4;"></span>
-        </div>
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/jiya-kakani-bab172204/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/JiyaRun" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                    <a href="mailto: kakanijiya@gmail.com" class="home__social-icon"><i class='bx bx-envelope' ></i></a>
+                </div>
 
-        <!-- <div class="btn-box btns">
-            <a href="#" class="btn">Read More</a>
-            <span class="animate scroll" style="--i:5;"></span>
-        </div> -->
+          
+            </section>
 
-        <div class="project-img">
-            <img src="ales-nesetril-Im7lZjxeLhg-unsplash.jpg" alt="">
-            <span class="circle-spin"></span>
-            <span class="animate scroll" style="--i:2;"></span>
-        </div>
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
 
-        <div class="project-content">
-            <h3>Bus Reservation System<span class="animate scroll" style="--i:3;"></span></h3>
-            <p>Acquired knowledge about the implementation of classes in the C++ language, along with understanding how to
-                work with objects.</p>
-            <span class="animate scroll" style="--i:4;"></span>
-        </div>
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/about.jpg" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">Jiya Kakani</h2>
+                        <p class="about__text">I am a final year undergraduate student pursuing B-tech in Electrical engineering from National Institute of Technology,Hamirpur<br>I am a dedicated technologist with a passion for innovation and problem-solving.<br>My journey began with learning a computer language where I developed a strong curiosity for the ever-evolving world of technology.</br> </p>           
+                    </div>                                   
+                </div>
+            </section>
 
-        <!-- <div class="btn-box btns">
-            <a href="#" class="btn">Read More</a>
-            <span class="animate scroll" style="--i:5;"></span>
-        </div> -->
-        <div class="project-img">
-            <img src="ales-nesetril-Im7lZjxeLhg-unsplash.jpg" alt="">
-            <span class="circle-spin"></span>
-            <span class="animate scroll" style="--i:2;"></span>
-        </div>
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
 
-        <div class="project-content">
-            <h3>Amazon Clone<span class="animate scroll" style="--i:3;"></span></h3>
-            <p>Designed and developed a responsive online shopping website with user-friendly navigations with the help of
-                HTML, CSS and JAVASCRIPT</p>
-            <span class="animate scroll" style="--i:4;"></span>
-        </div>
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Professional Skills</h2>
+                        <p class="skills__text">I am proficient in C/C++, Javascript and DSA. Also I'm pretty familiar with Web Development.</p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-html5 skills__icon'></i>
+                                <span class="skills__name">HTML</span>
+                            </div>
+                            <div class="skills__bar skills__html">
 
-    </section>
+                            </div>
+                            <div>
+                                <span class="skills__percentage">95%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-css3 skills__icon'></i>
+                                <span class="skills__name">CSS</span>
+                            </div>
+                            <div class="skills__bar skills__css">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-javascript skills__icon' ></i>
+                                <span class="skills__name">JAVASCRIPT</span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">65%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-data' ></i>
+                                <span style="width: 30px;height: 30px;" class="iconify" data-inline="false"></span>
+                                
+                                <span class="skills__name">DATA STRUCTURES & ALGORITHMS</span>
+                            </div>
+                            <div class="skills__bar skills__dsa">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">45%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <span class="iconify" data-icon="logos:c-plusplus" data-inline="false"></span>
+                                <span class="skills__name" style="margin-left: 30px;">C/C++</span>
+                            </div>
+                            <div class="skills__bar skills__c"></div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    
+                    <div>              
+                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                    </div>
+                </div>
+            </section>
+            <!-- ======education======= -->
+            <section id="education"style="margin-top: 100px;">
+                <h2 class="section-title">Education</h2>
+                
 
-    <!-- education section dsign  -->
-    <section class="education" id="education">
-        <h2 class="heading">My <span>Journey</span><span class="animate scroll" style="--i:1;"></span></h2>
-
-        <div class="education-row">
-            <div class="education-column">
-                <h3 class="title">Education<span class="animate scroll" style="--i:2;"></span></h3>
-
-                <div class="education-box">
-
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year">
-                                <i class="fa-solid fa-calendar-days"></i>May 2020</div>
-                                <h3>St.Jones Convent H.S. School Khandwa</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, ea.
-                                </p>
+                <h1 style="text-align:center;">
+                    <span>
+                        <i  style="font-size: 2.5rem; color: hsl(var(--hue-color), 89%, 60%);"class="fas fa-graduation-cap"></i>
+                    </span>
+                    <span style="color: hsl(var(--hue-color), 89%, 60%) ;font-size:2.5rem" > </span>
+                    
+                </h1>
+    
+                <div class="timeline">
+    
+                    <div class="timeline-box left ">
+                        <div class="timeline-container">
+                            <h3 class="experience-designation  m0 m-blue" style="color:hsl(var(--hue-color), 89%, 60%);"> Bachelor of Technology </h3>
+                            <h4 class="experience-company-name "> NIT Hamirpur </h4>
+                            <h5 class="experience-duration m0"> Dec, 2020 - July, 2024 (Expected) </h5>
+    
+                            <p class="experience-description text-align-justify"> Branch - Electrical Engineering</p>
+                            <p class="experience-description text-align-justify"> CGPA - 8.21</p>
                         </div>
                     </div>
-
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year">
-                                <i class="fa-solid fa-calendar-days"></i>July 2024</div>
-                                <h3>National Institute Of Technology Hamirpur</h3>
-                                <p>Bachelor Technology in ELECTRICAL ENGINEERING
-                                </p>
+    
+                    <div class="timeline-box right ">
+                        <div class="timeline-container">
+                            <h3 class="experience-designation  m0 m-blue" style="color:hsl(var(--hue-color), 89%, 60%);"> Sr. Secondary Education </h3>
+                            <h4 class="experience-company-name "> St.Jones Convent School, Khandwa </h4>
+                            <h5 class="experience-duration m0"> Apr, 2018 - May, 2020 </h5>
+                            
+                            <p class="experience-description text-align-justify"> Percentage - 85%</p>
+                            
                         </div>
                     </div>
-                    <span class="animate scroll" style="--i:3;"></span>
+    
+                    
+    
+                    <div id="timeline-divider">
+                        <div class="timeline-traveller">
+                            <div>
+                                <i class="fas fa-car-side" style="font-size: 2rem;"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </section>
+
+            <!--===== project =====-->
+            <section class="work section" id="work" >
+                <h2 class="section-title">Projects</h2>
             
-            <!-- <div class="education-column">
-                <h3 class="title">Experience<span class="animate scroll" style="--i:2;"></span></h3>
-
-                <div class="education-box">
-
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year">
-                                <i class="fa-solid fa-calendar-days"></i>May 2020</div>
-                                <h3>St.Jones Convent H.S. School Khandwa</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, ea.
-                                </p>
-                        </div>
-                    </div>
-
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year">
-                                <i class="fa-solid fa-calendar-days"></i>July 2024</div>
-                                <h3>National Institute Of Technology Hamirpur</h3>
-                                <p>Bachelor Technology in ELECTRICAL ENGINEERING
-                                </p>
-                        </div>
-                    </div>
-                    <span class="animate scroll" style="--i:3;"></span>
+            <div class="blog-post " style="margin-top: 10vh;">
+                <div class="blog-post__img" style="height: 10%;">
+                    <img src="portfolioimge.png" alt="">
                 </div>
-            </div> -->
-
-
-        </div>
-    </section>
-
-    <!-- skills section design  -->
-    <section class="skills" id="skills">
-        <h2 class="heading">My <span>Skills<span class="animate scroll" style="--i:1;"></span></span></h2>
-
-        <div class="skills-row">
-            <div class="skills-column">
-                <h3 class="title">Coding Skills<span class="animate scroll" style="--i:2;"></span></h3>
-
-                <div class="skills-box">
-                    <div class="skills-content">
-                        <div class="progress">
-                            <h3>HTML<span>90%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>CSS<span>80%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>Javascript<span>60%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-                        <div class="progress">
-                            <h3>C/C++<span>98%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
+                <div class="blog-post__info ">
+                    <h1 class="blog-post__title" style="color:hsl(var(--hue-color), 89%, 60%);" >Portfolio Website</h1>
+                    <p class="blog-post__text">
+                        <span class="text-highlight-2">Portfolio</span> is a personal project built whose frontend is coded in HTML, CSS, Bootstrap & the functions are implemented using Javascript.
+                    </p>
+                    <div style="margin-bottom: 10px;"class="technologies">
+                      <p class="project-technologies">>> Tech Stack - HTML, CSS, Bootstrap, Javascript</p>
+                      
+                     
                     </div>
-                    <span class="animate scroll" style="--i:4;"></span>
-                </div>
-
-            </div>
-            
-            <!-- <div class="skills-column">
-                <h3 class="title">Professional Skills<span class="animate scroll" style="--i:2;"></span></h3>
-
-                <div class="skills-box">
-                    <div class="skills-content">
-                        <div class="progress">
-                            <h3>HTML<span>90%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>CSS<span>80%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>Javascript<span>60%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-                        <div class="progress">
-                            <h3>C/C++<span>98%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
+                    
                     </div>
-                    <span class="animate scroll" style="--i:4;"></span>
                 </div>
-
-            </div> -->
-        </div>
-    </section>
-<!-- contact section design  -->
-<section class="contact" id="contact">
-    <h2 class="head">My<span>Contact</span><span class="animate scroll" style="--i:1;"></span></h2>
-
-    <form action="#">
-        <div class="input-box">
-            <div class="input-field">
-                <input type="text" placeholder="Full Name" required>
-                <span class="focus"></span>
-            </div>
-            <div class="input-field">
-                <input type="text" placeholder="Email Address" required>
-                <span class="focus"></span>
             </div> 
-            <span class="animate scroll" style="--i:3;"></span> 
-        </div>
 
-        <div class="input-box">
-            <div class="input-field">
-                <input type="number" placeholder="Mobile Number" required>
-                <span class="focus"></span>
+         <!-- --------project1------- -->
+   <div class="blog-post " style="margin-top: 10vh;">
+                <div class="blog-post__img" style="height: 10%;">
+                    <img src="BusReservationSys.jpg" alt="">
+                </div>
+                  <div class="blog-post__info ">
+                      <h1 class="blog-post__title" style="color:hsl(var(--hue-color), 89%, 60%);">Bus Reservation System</h1>
+                      <p class="blog-post__text">
+                          <span class="text-highlight-2">Car parking system</span>  Created an intuitive menu system and employed effective input/output handling, enhancing user interaction and error management.Developed a comprehensive bus reservation system with Bus and Reservation classes to manage availability, reservations, and bookings
+                      </p>
+                      <div style="margin-bottom: 10px;"class="technologies">
+                        <!-- <p class="project-technologies">>> Tech Stack - </p> -->
+                        
+                      </div>
+                      <div class="d-flex justify-content-around ">
+                         
+                      </div>
+                  </div>
+              </div>
+  
+              <!-- PROJECT-2 -->
+              
+              <div class="blog-post " style="margin-top: 10vh;">
+                <div class="blog-post__img" style="height: 10%;">
+                    <img src="amazon.png" alt="">
+                </div>
+                  <div class="blog-post__info ">
+                      <h1 class="blog-post__title">Amazon Clone</h1>
+                      <p class="blog-post__text">
+                          <span class="text-highlight-2">Crafted</span>and launched a user-responsive online shopping website, akin to Amazon's intuitive navigational model.Demonstrated expertise in developing a modern e-commerce platform, optimizing user experience through interactive elements and cutting-edge design techniques.
+                      </p>
+                      <div style="margin-bottom: 10px;"class="technologies">
+                        <p class="project-technologies">>> Tech Stack -  HTML, CSS, and JavaScript</p>
+                        
+                      </div>
+                      <div class="d-flex justify-content-around ">
+                         
+                      </div>
+                  </div>
+              </div>
+  
+           
+  </section> 
+           
+        </main>
+
+        <!-- ===== FOOTER =====
+        <footer class="footer">
+            <p class="footer__title">Sonali Tiwari</p>
+            <div class="footer__social">
+                <a href="8824701955" class="footer__icon"><i class='bx bxs-contact' ></i></a>
+                <a href="https://www.instagram.com/accounts/onetap/?next=%2F" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
             </div>
-            <div class="input-field">
-                <input type="text" placeholder="Email Subject" required>
-                <span class="focus"></span>
+            
+        </footer> -->
+         <!--===== FOOTER =====-->
+         <footer class="footer">
+            <p class="footer__title"><span class="text-highlight footer-name">Jiya </span></p>
+            <!-- <h5 class="footer__phone"style="margin:10px; color:#dddddd;">Phone: +91-9340299460</h5> -->
+            <div class="footer__social">
+                <a href="https://www.linkedin.com/in/jiya-kakani-bab172204/" target="_blank" class="footer__icon"><i class='bx bxl-linkedin' ></i></a>
+                <a href="https://github.com/JiyaRun" target="_blank" footer__icon><i class='bx bxl-github ji' ></i></a>
+                <a href="mailto:kakanijiya@gmail.com" class="footer__icon"><i class='bx bx-envelope' ></i></a>
             </div>
-            <span class="animate scroll" style="--i:5;"></span>  
-        </div>
+            <p style="margin-top: 10px;color:#dddddd;">&#169; 2023 Made by Jiya</span></p>
+        </footer>
 
-        <div class="textarea-field">
-            <textarea name ="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
-            <span class="focus"></span>
-            <span class="animate scroll" style="--i:7;"></span>
-        </div>
-        <div class="btn-box btns">
-            <button
-            type="submit" class="btn">Submit</button>
-            <span class="animate scroll" style="--i:9;"></span>
-        </div>
-    </form>
-</section>
 
-<!-- footer design  -->
-<footer class="footer">
-    <div class="footer-text">
-        <p>Copyright &copy; 2023 by Jiya | All Rights Reserved.</p>
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
 
-        <span class="animate scroll" style="--i:1;"></span>
-    </div>
-    <div class="footer-iconTop">
-        <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
-
-        <span class="animate scroll" style="--i:3;"></span>
-    </div>
-</footer>
-
-<script src="js/script.js"></script>
-</body>
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
