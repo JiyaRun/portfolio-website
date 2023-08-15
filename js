@@ -1,50 +1,62 @@
+/*===== MENU SHOW =====*/ 
+const showMenu = (toggleId, navId) =>{
+    const toggle = document.getElementById(toggleId),
+    nav = document.getElementById(navId)
 
-// toggle icon 
-
-let menuIcon = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar');
-
-menuIcon.onclick = () => {
-    menuIcon.classList.togggle('bx-x');
-    navbar.classList.toggle('active');
+    if(toggle && nav){
+        toggle.addEventListener('click', ()=>{
+            nav.classList.toggle('show')
+        })
+    }
 }
+showMenu('nav-toggle','nav-menu')
 
-// scroll section
-let section= document.querySelectorAll('section');
-let navLinks= document.querySelectorAll('header nav a');
+/*==================== REMOVE MENU MOBILE ====================*/
+const navLink = document.querySelectorAll('.nav__link')
 
-window.onscroll=()=>
-    section.forEach(sec => {
-            let top =window.scrollY;
-            let offset = sec.offsetTop -100;
-            let height = sec.offsetHeight;
-            let id = sec.getAttribute('id');
+function linkAction(){
+    const navMenu = document.getElementById('nav-menu')
+    // When we click on each nav__link, we remove the show-menu class
+    navMenu.classList.remove('show')
+}
+navLink.forEach(n => n.addEventListener('click', linkAction))
 
-            if(top>=offset && top<offset +height){
-                // active navbar links
-                navLinks.forEach(links=>{
-                    links.classList.remove('active');
-                    document.querySelector('header nav a[href*=' +id + ']').classList.add('active');
-            });
-            // active section for Animation  on scroll
-            sec.classList.add('show-animate');
-            }
-            // if want to use aimation that repeats on scroll 
-            else{
-                sec.classList.remove('show-animate');
-            }
-        });
-    // sticky header
-    let header = document.querySelector('header');
+/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
+const sections = document.querySelectorAll('section[id]')
 
-    header.classList.toggle('sticky',window.scrollY>100);
+function scrollActive(){
+    const scrollY = window.pageYOffset
 
-    // remve toggle icon and navbar when click nvbar links(scroll)
-    menuIcon.classList.remove('bx-x');
-    navbar.classList.remove('active');
+    sections.forEach(current =>{
+        const sectionHeight = current.offsetHeight
+        const sectionTop = current.offsetTop - 50;
+        sectionId = current.getAttribute('id')
 
-    // animatiom footer on scroll
-    let footer= document.querySelector('footer')
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active')
+        }else{
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active')
+        }
+    })
+}
+window.addEventListener('scroll', scrollActive)
 
-    footer.classList.toggle('show-animate', this.innerHeight + this.scrollY >= document.scrollingElement.scrollHeight);
-    // }
+/*===== SCROLL REVEAL ANIMATION =====*/
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2000,
+    delay: 200,
+//     reset: true
+});
+
+sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{}); 
+sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
+sr.reveal('.home__img, .education__subtitle, .education__text, .skills__img',{delay: 400}); 
+sr.reveal('.home__social-icon',{ interval: 200}); 
+sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
+sr.reveal('.home__img, .education__subtitle, .education__text, .skills__img',{delay: 400}); 
+/*SCROLL FOOTER*/
+sr.reveal('.footer__title',{ delay: 200});
+sr.reveal('.footer__phone',{ delay: 200});
+sr.reveal('.footer__social',{ interval: 200});
